@@ -1,0 +1,10 @@
+/Users/deniszhigalov/Documents/projects/TuvaMusic-web/api/RustoreApi/RustoreApi/bin/Debug/netstandard2.0/RustoreApi.deps.json
+/Users/deniszhigalov/Documents/projects/TuvaMusic-web/api/RustoreApi/RustoreApi/bin/Debug/netstandard2.0/RustoreApi.dll
+/Users/deniszhigalov/Documents/projects/TuvaMusic-web/api/RustoreApi/RustoreApi/bin/Debug/netstandard2.0/RustoreApi.pdb
+/Users/deniszhigalov/Documents/projects/TuvaMusic-web/api/RustoreApi/RustoreApi/obj/Debug/netstandard2.0/RustoreApi.csproj.AssemblyReference.cache
+/Users/deniszhigalov/Documents/projects/TuvaMusic-web/api/RustoreApi/RustoreApi/obj/Debug/netstandard2.0/RustoreApi.GeneratedMSBuildEditorConfig.editorconfig
+/Users/deniszhigalov/Documents/projects/TuvaMusic-web/api/RustoreApi/RustoreApi/obj/Debug/netstandard2.0/RustoreApi.AssemblyInfoInputs.cache
+/Users/deniszhigalov/Documents/projects/TuvaMusic-web/api/RustoreApi/RustoreApi/obj/Debug/netstandard2.0/RustoreApi.AssemblyInfo.cs
+/Users/deniszhigalov/Documents/projects/TuvaMusic-web/api/RustoreApi/RustoreApi/obj/Debug/netstandard2.0/RustoreApi.csproj.CoreCompileInputs.cache
+/Users/deniszhigalov/Documents/projects/TuvaMusic-web/api/RustoreApi/RustoreApi/obj/Debug/netstandard2.0/RustoreApi.dll
+/Users/deniszhigalov/Documents/projects/TuvaMusic-web/api/RustoreApi/RustoreApi/obj/Debug/netstandard2.0/RustoreApi.pdb

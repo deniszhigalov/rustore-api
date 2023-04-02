@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "dgSpecHash": "ycXZHGPyxzeIG/3IgJX3Z+17yI4ppF9okxdWHSveKhWVeCocv1o9wQSNQjobyK7iTtUcX3QcLCU/0DHLutLBMw==",
+  "success": true,
+  "projectFilePath": "/Users/deniszhigalov/Documents/projects/rustore-api/RustoreApi/RustoreApi.csproj",
+  "expectedPackageFiles": [
+    "/Users/deniszhigalov/.nuget/packages/bouncycastle/1.8.9/bouncycastle.1.8.9.nupkg.sha512",
+    "/Users/deniszhigalov/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/Users/deniszhigalov/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512",
+    "/Users/deniszhigalov/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'BouncyCastle 1.8.9' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
+      "libraryId": "BouncyCastle",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    }
+  ]
+}
