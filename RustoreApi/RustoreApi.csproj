@@ -3,6 +3,15 @@
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
         <Nullable>disable</Nullable>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Title>RustoreApi</Title>
+        <Authors>Denis Zhigalov</Authors>
+        <Description>This is a module for working with Rustore Api developed on the Microsoft platform.</Description>
+        <RepositoryUrl>https://github.com/deniszhigalov/rustore-api</RepositoryUrl>
+        <PackageVersion>1.0.2</PackageVersion>
+        <PackageProjectUrl>https://github.com/deniszhigalov/rustore-api</PackageProjectUrl>
+        <PackageLicenseUrl></PackageLicenseUrl>
+        <PackageIconUrl>https://ibb.co/Xb7KwS8</PackageIconUrl>
     </PropertyGroup>
 
     <ItemGroup>
