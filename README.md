@@ -22,7 +22,7 @@ This is a module for working with Rustore Api developed on the Microsoft platfor
 
 ---
 
-Download or Clone the source code from [Here](https://github.com/deniszhigalov/rustore-api) or Find the package at nuget.org
+Download or Clone the source code from [Here](https://github.com/deniszhigalov/rustore-api) or Find the package at nuget.org RustoreApi
 
 ## Manual
 
