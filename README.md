@@ -9,7 +9,7 @@ This is a module for working with Rustore Api developed on the Microsoft platfor
 ---
 
 1. C# programming language
-2. JetBrains Rider 2021.3.4 (IDE)
+2. JetBrains Rider 2021.3.4 (IDE), Visual Studio 2022
 3. Git & Github (Version Control)
 
 ## Support Developer
@@ -37,7 +37,7 @@ using RustoreApi;
 
 RustoreClient rustoreClient = new RustoreClient(new RustoreParams
 {
-    CompanyId = <Your company id>,
+    KeyId = <Your company id>,
     PrivateKey = <Your private key>,
     TimeZone = <Timezone server> //example +03:00
 });
@@ -58,6 +58,17 @@ var data = await rustoreClient.GetPaymentByPaymentId(new PaymentByPaymentIdReque
 });
 ```
 
+- Payment receipt method for testing (info [here](https://help.rustore.ru/rustore/for_developers/worki_with_RuStore_API/public_api_1))
+
+```csharp
+...
+
+var data = await rustoreClient.GetPaymentByPaymentIdTest(new PaymentByPaymentIdRequest
+{
+    SubscriptionToken = <Your subscription token>
+});
+```
+
 - Method for retrieving subscription data (info [here](https://help.rustore.ru/rustore/for_developers/worki_with_RuStore_API/subscription_data_payment_id_3))
 
 ```csharp
@@ -67,7 +78,16 @@ var data = await rustoreClient.GetPaymentBySubscriptionId(new PaymentBySubscript
 });
 ```
 
-- Subscription data retrieval method (V2) (info [here](https://help.rustore.ru/rustore/for_developers/worki_with_RuStore_API/subscription_data_by_payment_id_2_))
+- Method for retrieving subscription data. Method for test pauments (info [here](https://help.rustore.ru/rustore/for_developers/worki_with_RuStore_API/subscription_data_payment_id_3))
+
+```csharp
+var data = await rustoreClient.GetPaymentBySubscriptionIdTest(new PaymentBySubscriptionIdRequest
+{
+    SubscriptionToken = <Your subscription token>
+});
+```
+
+- Subscription data retrieval method (V2) Outdated (info [here](https://help.rustore.ru/rustore/for_developers/worki_with_RuStore_API/subscription_data_by_payment_id_2_](https://www.rustore.ru/help/work-with-rustore-api/api-subscription-payment/api-id-payment-method)
 
 ```csharp
 var receipt = await rustoreClient.GetSubscriptionsByPaymentIdV2(new SubscriptionsV2Request
@@ -79,10 +99,44 @@ var receipt = await rustoreClient.GetSubscriptionsByPaymentIdV2(new Subscription
 });
 ```
 
-- Method for obtaining subscription status (info [here](https://help.rustore.ru/rustore/for_developers/worki_with_RuStore_API/subscription_status_by_payment_ID))
+- Subscription data retrieval method (V3)  (info [here](https://www.rustore.ru/help/work-with-rustore-api/api-subscription-payment/api-id-payment-method-v3)
+
+```csharp
+var receipt = await rustoreClient.GetSubscriptionsByPaymentIdV3(new SubscriptionsV2Request
+{
+    SubscriptionToken = <Your subscription token>,
+    UserId = <Your user id>,
+    SubscriptionId = <Your subscription id>, //example test_subscription_1
+    PackageName = <Your package name> //example com.app
+});
+```
+
+- Subscription data retrieval method (V3). For a test subscription  (info [here](https://www.rustore.ru/help/work-with-rustore-api/api-subscription-payment/api-id-payment-method-v3)
+
+```csharp
+var receipt = await rustoreClient.GetSubscriptionsByPaymentIdV3Test(new SubscriptionsV2Request
+{
+    SubscriptionToken = <Your subscription token>,
+    UserId = <Your user id>,
+    SubscriptionId = <Your subscription id>, //example test_subscription_1
+    PackageName = <Your package name> //example com.app
+});
+```
+
+- Method for obtaining subscription status (info [here](https://www.rustore.ru/help/work-with-rustore-api/api-subscription-payment/api-token-substatus-method))
 
 ```csharp
 var data = await rustoreClient.GetStatusSubscription(new StatusSubscriptionRequest
+{
+    SubscriptionToken = <Your subscription token>
+});
+```
+
+
+- Method for obtaining subscription status.  For a test subscription (info [here](https://www.rustore.ru/help/work-with-rustore-api/api-subscription-payment/api-token-substatus-method))
+
+```csharp
+var data = await rustoreClient.GetStatusSubscriptionTest(new StatusSubscriptionRequest
 {
     SubscriptionToken = <Your subscription token>
 });
