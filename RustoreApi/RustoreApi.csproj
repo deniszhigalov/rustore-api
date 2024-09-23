@@ -1,21 +1,25 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>netstandard2.0</TargetFramework>
+        <TargetFramework>netstandard2.1</TargetFramework>
         <Nullable>disable</Nullable>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <Title>RustoreApi</Title>
-        <Authors>Denis Zhigalov</Authors>
-        <Description>This is a module for working with Rustore Api developed on the Microsoft platform.</Description>
-        <RepositoryUrl>https://github.com/deniszhigalov/rustore-api</RepositoryUrl>
+        <Authors>Denis Zhigalov, Simen Pankratov</Authors>
+        <Description>This is a module for working with Rustore Api developed on the Microsoft platform.
+Support host :public-api.rustore.ru</Description>
+        <RepositoryUrl>https://github.com/PankratovSemen/rustore-api-C-sharp</RepositoryUrl>
         <PackageVersion>1.0.2</PackageVersion>
-        <PackageProjectUrl>https://github.com/deniszhigalov/rustore-api</PackageProjectUrl>
+        <PackageProjectUrl>https://github.com/PankratovSemen/rustore-api-C-sharp</PackageProjectUrl>
         <PackageLicenseUrl></PackageLicenseUrl>
         <PackageIconUrl>https://ibb.co/Xb7KwS8</PackageIconUrl>
+        <Copyright>OpenSource</Copyright>
+        <PackageReleaseNotes>Update work with API Rustore</PackageReleaseNotes>
+        <AssemblyVersion>2.0</AssemblyVersion>
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="BouncyCastle" Version="1.8.9" />
+      <PackageReference Include="BouncyCastle.Cryptography" Version="2.4.0" />
       <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     </ItemGroup>
 
